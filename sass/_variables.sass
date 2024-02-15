@@ -1,0 +1,104 @@
+*
+  box-sizing: border-box
+
+// colors
+
+$main: #323264
+$main-alt: #46466E
+$main-soft: #686887
+$accent: #F0145A
+$active-regular: #24A3FF
+$active-hover: #0085FF
+$active-active: #006CCF
+$grey-bg: #F5F5FA
+$grey-bg-alt: #EDEDF7
+$grey-text: #B3B3BA
+$grey-separator: #E6E6F0
+$text-color: #000
+
+$gradient: linear-gradient(135.00deg, rgb(50, 50, 100) 0%,rgb(50, 50, 100) 73.958%,rgb(165, 75, 95) 100%)
+$gradient-soft: linear-gradient(23.75deg, rgb(50, 50, 100) 9.159%,rgb(50, 50, 100) 51.115%,rgb(122, 66, 94) 92.03%)
+$gradient-red: linear-gradient(-49.87deg, rgb(240, 20, 90) 8.512%,rgb(105, 50, 100) 73.404%)
+$gradient-supersoft: linear-gradient(208.37deg, rgb(50, 50, 100) 7.87%,rgb(50, 50, 100) 58.098%,rgb(100, 62, 114) 91.728%)
+$gradient-redtext: linear-gradient(118.16deg, rgb(240, 20, 90) 10.24%,rgb(239, 128, 128) 93.344%)
+
+// fonts
+
+h1
+  background: linear-gradient(118.16deg, rgb(240, 20, 90),rgb(239, 128, 128))
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+  font-family: Montserrat
+  font-size: 38px
+  font-weight: 700
+  line-height: 46px
+  letter-spacing: 0%
+  text-align: left
+
+h2
+  color: $main
+  font-family: Montserrat
+  font-size: 30px
+  font-weight: 700
+  line-height: 37px
+  letter-spacing: 0%
+  text-align: left
+
+h3
+  color: $main
+  font-family: Montserrat
+  font-size: 22px
+  font-weight: 700
+  line-height: 27px
+  letter-spacing: 0%
+  text-align: left
+
+@mixin h3-caps
+  color: $main
+  font-family: Montserrat
+  font-size: 14px
+  font-weight: 700
+  line-height: 17px
+  letter-spacing: 1px
+  text-align: left
+  text-transform: uppercase
+
+h4
+  color: $main
+  font-family: Montserrat
+  font-size: 16px
+  font-weight: 700
+  line-height: 20px
+  letter-spacing: 0%
+  text-align: left
+
+@mixin paragraph
+  color: $text-color
+  font-family: Montserrat
+  font-size: 16px
+  font-weight: 400
+  line-height: 26px
+  letter-spacing: 0%
+  text-align: left
+
+@mixin ul-list
+  color: $text-color
+  font-family: Montserrat
+  font-size: 18px
+  font-weight: 400
+  line-height: 26px
+  letter-spacing: 0%
+  text-align: left
+
+// links
+
+@mixin link-regular
+  color: $active-regular
+  font-family: Montserrat
+  font-size: 16px
+  font-weight: 400
+  line-height: 20px
+  letter-spacing: 0%
+  text-align: left
