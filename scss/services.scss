@@ -1,0 +1,32 @@
+.page-start {
+    .heder {
+        .logo {
+            display: flex;
+            .page-heder {
+                font: normal 36px/1.2 'Montserrat', 'sans-serif';
+                &::before {
+                    content: "/";
+                    color: $color-accent;
+                    padding-left: 4px;
+                    padding-right: 4px;
+                }
+                
+            }
+        }
+        .active_heder {
+            color: $color-accent;
+            position: relative;
+            &::after {
+                content: "";
+                border-top: 1px solid $color-accent;
+                display: block;
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                left: 0;
+        
+            }
+        }
+    }
+  
+}
