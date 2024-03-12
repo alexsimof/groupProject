@@ -196,6 +196,62 @@
   color: $color-accent;
 }
 
+// hero
+
+.hero {
+  padding: 0 30px;
+
+  &-title {
+    text-align: left;
+  }
+
+  &-intro {
+    margin-bottom: 30px;
+  }
+
+  &-text {
+    @include paragraph;
+  }
+
+  &-numb {
+    color: $color-accent;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: left;
+  }
+
+  &-advantages {
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 30px;
+  }
+
+  &-advantages::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-separator;
+  }
+
+  &-years {
+    margin-bottom: 40px;
+  }
+
+  &-clients {
+    margin-bottom: 40px;
+  }
+
+  &-icon-txt {
+    margin-top: 10px;
+  }
+}
+
+
 // about us page, mobile-first approach
 
 @media screen and (min-width: 560px) {

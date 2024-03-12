@@ -350,6 +350,29 @@ template {
   display: none;
 }
 
+h1 {
+  background: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+h2 {
+  color: #323264;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+}
+
 .gradient-h2, .team .blockquote, .page-start .page-start-block-two .page-start-block-two-left span:hover {
   background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
@@ -1129,6 +1152,55 @@ time {
 
 .burger-activ {
   color: #F0145A;
+}
+
+.hero {
+  padding: 0 30px;
+}
+.hero-title {
+  text-align: left;
+}
+.hero-intro {
+  margin-bottom: 30px;
+}
+.hero-text {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.hero-numb {
+  color: #F0145A;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+}
+.hero-advantages {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 30px;
+}
+.hero-advantages::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #E6E6F0;
+}
+.hero-years {
+  margin-bottom: 40px;
+}
+.hero-clients {
+  margin-bottom: 40px;
+}
+.hero-icon-txt {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 560px) {
