@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Montserrat";
-    font-style: normal ;
+    font-style: normal;
     font-weight: bold;
     src: local("Montserrat"),
         url('../fonts/Montserrat/Montserrat-Bold.woff') format("woff"),
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Montserrat";
-    font-style: normal ;
+    font-style: normal;
     font-weight: normal;
     src: local("Geometria"),
         url('../fonts/Montserrat/Montserrat-Regular.woff') format("woff"),
@@ -35,12 +35,15 @@ h2 {
 h3 {
     font: bold 22px/1.2 'Montserrat', 'sans-serif';
 }
+
 h4 {
     font: bold 16px/1.2 'Montserrat', 'sans-serif';
 }
+
 p {
     font: normal 16px/1.6 'Montserrat', 'sans-serif';
 }
+
 li {
     font: normal 18px/1.2 'Montserrat', 'sans-serif';
     height: auto;
@@ -52,9 +55,7 @@ a {
     color: $color-active;
     transition: 0.2s linear;
 
-    &:hover {
-        color:$color-accent;
-    }
+
 }
 
 address {
@@ -68,8 +69,7 @@ blockquote {
 cite {
     font-style: normal;
 }
+
 time {
     font: bold 12px/1.2 'Montserrat', 'sans-serif';
 }
-
-
