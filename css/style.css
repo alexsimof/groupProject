@@ -963,6 +963,11 @@ time {
   padding: 10px 15px;
   background-color: #F5F5FA;
 }
+.header-contact-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .header-lang-item {
   color: #B3B3BA;
   font-family: Montserrat;
@@ -1126,6 +1131,109 @@ time {
   color: #F0145A;
 }
 
+@media screen and (min-width: 560px) {
+  .header-menu {
+    display: block;
+    padding: 0 15px;
+  }
+  .header-menu-item {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .header-menu-item:hover {
+    border-bottom: 2px solid #24A3FF;
+  }
+  .header-menu-item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .header-logo-link {
+    display: block;
+  }
+  .header-lang {
+    background: none;
+  }
+  .header-lang-fb {
+    display: block;
+    margin-left: 15px;
+  }
+  .header-lang-adres {
+    position: relative;
+    display: block;
+    color: #B3B3BA;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: right;
+    padding: 0 15px;
+    margin-right: 15px;
+  }
+  .header-lang-adres::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top: 6px;
+    left: 0px;
+    background-color: #B3B3BA;
+    border-radius: 50%;
+  }
+  .header-lang-adres::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top: 6px;
+    right: 0px;
+    background-color: #B3B3BA;
+    border-radius: 50%;
+  }
+  .header-logo-link-mobile {
+    display: none;
+  }
+  .header-logo-page {
+    font-size: 36px;
+    margin-top: 8px;
+  }
+  .header-burger {
+    display: none;
+  }
+  .activ {
+    position: relative;
+    color: #F0145A;
+  }
+  .activ::after {
+    position: absolute;
+    content: "";
+    width: 73px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #F0145A;
+  }
+}
+@media screen and (min-width: 900px) {
+  .header-wrapper {
+    grid-template-columns: 350px 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 50px;
+  }
+  .header-logo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .header-menu {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header-lang {
+    order: 0;
+    justify-content: flex-end;
+  }
+}
 @media (max-width: 1935px) {
   .container {
     max-width: 1600px;

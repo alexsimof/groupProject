@@ -1,6 +1,5 @@
 .header {
   &-wrapper {
-
     display: grid;
   }
 
@@ -11,6 +10,12 @@
     order: -1;
     padding: 10px 15px;
     background-color: $color-bg;
+  }
+
+  &-contact-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   &-lang-item {
@@ -189,4 +194,133 @@
 
 .burger-activ {
   color: $color-accent;
+}
+
+// about us page, mobile-first approach
+
+@media screen and (min-width: 560px) {
+  .header {
+    &-menu {
+      display: block;
+      padding: 0 15px;
+    }
+
+    &-menu-item {
+      font-size: 16px;
+      font-weight: 700;
+
+      &:hover {
+        border-bottom: 2px solid $color-active;
+      }
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    &-logo-link {
+      display: block;
+    }
+
+    &-lang {
+      background: none;
+    }
+
+    &-lang-fb {
+      display: block;
+      margin-left: 15px;
+    }
+
+    &-lang-adres {
+      position: relative;
+      display: block;
+      color: $color-text;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: right;
+      padding: 0 15px;
+      margin-right: 15px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 7px;
+        height: 7px;
+        top: 6px;
+        left: 0px;
+        background-color: $color-text;
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 7px;
+        height: 7px;
+        top: 6px;
+        right: 0px;
+        background-color: $color-text;
+        border-radius: 50%;
+      }
+    }
+
+    &-logo-link-mobile {
+      display: none;
+    }
+
+    &-logo-page {
+      font-size: 36px;
+      margin-top: 8px;
+    }
+
+    &-burger {
+      display: none;
+    }
+  }
+
+  .activ {
+    position: relative;
+    color: $color-accent;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 73px;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background-color: $color-accent;
+
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    &-wrapper {
+      grid-template-columns: 350px 2fr;
+      grid-template-rows: 1fr 1fr;
+      padding-top: 50px;
+    }
+
+    &-logo {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+
+    &-menu {
+      grid-column: 2/ 3;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    &-lang {
+      order: 0;
+      justify-content: flex-end;
+    }
+  }
 }
