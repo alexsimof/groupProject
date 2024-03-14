@@ -1203,10 +1203,86 @@ time {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 560px) {
+.team-section-image {
+  background: url(/img/team.jpg) no-repeat center;
+  background-size: cover;
+  padding: 35px 0;
+  margin-bottom: 30px;
+}
+.team-section-title {
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 13px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team-section-wrap {
+  padding: 0 30px;
+}
+.team-section-text {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.team-section-subtitle {
+  background: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+  margin: 30px 0 60px;
+}
+
+.slick-dots {
+  bottom: -50px !important;
+}
+
+.achievements {
+  position: relative;
+  padding: 30px 60px;
+  background-color: #F5F5FA;
+}
+.achievements-wrap {
+  margin: 30px auto 0;
+}
+.achievements-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.achievements-one, .achievements-two, .achievements-three, .achievements-four {
+  border-radius: 12px;
+  padding: 25px 39px;
+  margin: 0 20px;
+  background: #fff;
+}
+.achievements-one img, .achievements-two img, .achievements-three img, .achievements-four img {
+  margin: auto;
+}
+.achievements::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #E6E6F0;
+}
+
+@media screen and (min-width: 768px) {
   .header-menu {
     display: block;
-    padding: 0 15px;
+    padding: 0 60px;
   }
   .header-menu-item {
     font-size: 16px;
@@ -1223,6 +1299,8 @@ time {
   }
   .header-lang {
     background: none;
+    justify-content: flex-start;
+    padding: 50px 60px 0;
   }
   .header-lang-fb {
     display: block;
@@ -1261,6 +1339,9 @@ time {
     background-color: #B3B3BA;
     border-radius: 50%;
   }
+  .header-logo {
+    padding: 15px 60px 10px;
+  }
   .header-logo-link-mobile {
     display: none;
   }
@@ -1284,36 +1365,112 @@ time {
     bottom: 0;
     background-color: #F0145A;
   }
+  .hero {
+    padding: 0 60px;
+  }
+  .team-section-image {
+    padding: 89px 0;
+  }
+  .team-section-title {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
+  .footer-grig {
+    padding: 0 60px;
+  }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .header-wrapper {
     grid-template-columns: 350px 2fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 50px;
+    padding: 50px 60px 0;
   }
   .header-logo {
     grid-column: 1/2;
     grid-row: 1/3;
+    padding: 0;
   }
   .header-menu {
     grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding: 0;
   }
   .header-lang {
     order: 0;
     justify-content: flex-end;
+    padding: 0;
+  }
+  .hero {
+    padding: 0 60px;
+  }
+  .hero-wrap {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .hero-intro {
+    width: 70%;
+  }
+  .hero-title {
+    margin-top: 0;
+  }
+  .hero-advantages {
+    margin-left: 30px;
+  }
+  .team-section-wrap {
+    display: flex;
+    padding: 0 60px;
+    margin-bottom: 60px;
+  }
+  .team-section-image {
+    margin-bottom: 60px;
+    padding: 105px 0;
+  }
+  .team-section-title {
+    font-size: 86px;
+    line-height: 105px;
+    letter-spacing: 63px;
+  }
+  .team-section-text {
+    width: 70%;
+  }
+  .team-section-subtitle {
+    margin: 0 0 0 60px;
   }
 }
-@media (max-width: 1935px) {
-  .container {
-    max-width: 1600px;
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 0 180px;
+  }
+  .team-section-wrap {
+    padding: 0 180px;
+  }
+  .team-section-image {
+    padding: 160px 0;
+  }
+  .team-section-title {
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: 63px;
   }
 }
-@media (max-width: 1440px) {
-  .container {
-    max-width: 1320px;
+@media screen and (min-width: 1920px) {
+  .hero {
+    padding: 0 280px;
+  }
+  .team-section-wrap {
+    padding: 0 280px;
+  }
+  .team-section-image {
+    padding: 236px 0;
+  }
+  .team-section-title {
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: 63px;
   }
 }
 @media (max-width: 1030px) {
@@ -1342,9 +1499,6 @@ time {
   }
 }
 @media (max-width: 768px) {
-  .container {
-    max-width: 648px;
-  }
   .new-block .news-grid {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;

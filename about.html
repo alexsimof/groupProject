@@ -61,7 +61,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="hero">
+    <section class="hero container">
       <div class="hero-wrap">
         <div class="hero-intro">
           <h1 class="hero-title">We turn over the idea of legal services</h1>
@@ -107,9 +107,45 @@
         </div>
       </div>
     </section>
+    <section class="team-section">
+      <div class="team-section-image">
+        <p class="team-section-title">TEAM</p>
+      </div>
+      <div class="team-section-wrap container">
+        <p class="team-section-text">
+          The historically unchanged legal profession has begun to reformat in recent years. Clients are feeling this,
+          but law
+          firms are still resisting evolution. Clients need convenience, simplicity, transparent payment. Google, IBM
+          WatsOn,
+          Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.
+          Quality is what we care about the most.
+          It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we want
+          our clients
+          to trust us too.
+        </p>
+        <p class="team-section-subtitle">Quality is what we care about the most.</p>
+      </div>
+    </section>
+    <section class="achievements">
+      <div class="container">
+        <h3 class="achievements-title">achievements</h3>
+        <div class="achievements-wrap">
+          <div class="achievements-one">
+            <img src="./img/legal.jpg" alt="vizitka">
+          </div>
+          <div class="achievements-two">
+            <img src="./img/premia.jpg" alt="vizitka">
+          </div>
+          <div class="achievements-three">
+            <img src="./img/lider.jpg" alt="vizitka">
+          </div>
+          <div class="achievements-four">
+            <img src="./img/ulf.jpg" alt="vizitka">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
-
   <footer class="footer ">
     <div class="footer-grig container">
       <ul class="address">
@@ -139,12 +175,45 @@
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
-    $('.one-time').slick({
+    $('.achievements-wrap').slick({
+      centerMode: true,
+      arrows: false,
       dots: true,
       infinite: true,
+      centerPadding: "70px",
       speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true
+      slidesToShow: 4,
+      adaptiveHeight: true,
+      mobileFirst: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 375,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          }
+        }
+      ]
     });
   </script>
 
