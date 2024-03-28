@@ -40,22 +40,22 @@
         </div>
 
         <nav class="header-menu">
-          <a class="header-menu-item activ" href="#">about us</a>
+          <a class="header-menu-item" href="about.html">about us</a>
           <a class="header-menu-item" href="#">services</a>
           <a class="header-menu-item" href="#">team</a>
           <a class="header-menu-item" href="#">publications</a>
-          <a class="header-menu-item" href="#">contact</a>
+          <a class="header-menu-item activ" href="contact.html">contact</a>
         </nav>
 
         <nav class="header-burger-menu">
           <a href="#" class="header-burger-close">
             <span></span>
           </a>
-          <a class="header-burger-menu-item burger-activ" href="#">about us</a>
+          <a class="header-burger-menu-item" href="#">about us</a>
           <a class="header-burger-menu-item" href="#">services</a>
           <a class="header-burger-menu-item" href="#">team</a>
           <a class="header-burger-menu-item" href="#">publications</a>
-          <a class="header-burger-menu-item" href="#">contact</a>
+          <a class="header-burger-menu-item burger-activ" href="#">contact</a>
         </nav>
       </div>
     </div>
@@ -64,26 +64,28 @@
     <section class="contacts container">
       <div class="contacts-wrap">
         <div class="contacts-adress-block">
-          <p class="contacts-title">Kyiv, Mechnikova str, 14</p>
+          <p class="contacts-title">Kyiv,<br>Mechnikova str, 14</p>
           <p class="contacts-phone">0800 211 927</p>
           <p class="contacts-mail">contact@forstudy.space</p>
-          <a href="#" class="contacts-facebook">
-            <svg width="38" height="38" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" />
-            </svg>
-            <span>Our page on facebook</span>
-          </a>
+          <div class="contacts-fb-block">
+            <a href="#" class="contacts-facebook">
+              <svg width="38" height="38" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" />
+              </svg>
+            </a>
+            <span>Our page<br>on facebook</span>
+          </div>
         </div>
         <div class="contacts-form-block">
+          <h1 class="contacts-form-title">We would like to help you</h1>
           <form action="" class="contacts-form">
-            <h1 class="contacts-form-title">We would like to help you</h1>
             <input type="text" placeholder="Name">
-            <input type="text" placeholder="Message">
-            <p>How to answer you?</p>
+            <textarea placeholder="Message" class="" name="" rows="3"></textarea>
+            <h3>How to answer you?</h3>
             <input type="text" placeholder="Phone number">
             <input type="text" placeholder="Email">
-            <input type="button" value="Send message">
+            <button type="button">Send message</button>
           </form>
         </div>
       </div>

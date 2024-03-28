@@ -43,6 +43,17 @@ h2 {
   text-align: left;
 }
 
+h3 {
+  color: $color-text;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 @mixin paragraph {
   color: $color-dark-text;
   font-family: Montserrat;
